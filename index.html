@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Montessori: Uma Revolução na Arte de Educar</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #FDFBF8; /* Off-white background */
+            color: #3D3D3D;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .bg-beige { background-color: #F5F1E9; }
+        .bg-moss-green { background-color: #8A9A5B; }
+        .text-moss-green { color: #556B2F; }
+        .border-moss-green { border-color: #556B2F; }
+        .accent-color { color: #A47C6F; } /* Soft terracotta */
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2rem;
+            }
+        }
+        .nav-link {
+            @apply px-4 py-2 text-gray-700 hover:text-moss-green transition-colors duration-300;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#home" class="font-bold text-xl text-moss-green">Montessori</a>
+            <div class="hidden md:flex items-center space-x-2">
+                <a href="#biografia" class="nav-link">Biografia</a>
+                <a href="#metodo" class="nav-link">O Método</a>
+                <a href="#obras" class="nav-link">Obras</a>
+                <a href="#legado" class="nav-link">Legado</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#biografia" class="block text-center py-3 px-4 text-sm text-gray-700 hover:bg-beige">Biografia</a>
+            <a href="#metodo" class="block text-center py-3 px-4 text-sm text-gray-700 hover:bg-beige">O Método</a>
+            <a href="#obras" class="block text-center py-3 px-4 text-sm text-gray-700 hover:bg-beige">Obras</a>
+            <a href="#legado" class="block text-center py-3 px-4 text-sm text-gray-700 hover:bg-beige">Legado</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center text-center text-white">
+            <div class="absolute inset-0 bg-black/50 z-10"></div>
+            <img src="https://s2-valor.glbimg.com/LJhrjSuiBC0263O2fgy15-2Uu7Y=/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2020/N/J/Ux4XKOQqeUSrBF0rEIOQ/foto09cul-201-michele-d28.jpg" 
+                 alt="[Ambiente montessoriano luminoso com crianças interagindo com materiais]" 
+                 class="absolute inset-0 w-full h-full object-cover">
+            <div class="relative z-20 p-4 max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">Maria Montessori: Uma Revolução na Arte de Educar</h1>
+                <h2 class="mt-4 text-xl md:text-2xl font-light">Descubra a vida, o método e o legado da mulher que nos ensinou a seguir a criança.</h2>
+            </div>
+        </section>
+
+        <!-- Call to Action Cards Section -->
+        <section class="bg-beige section-padding">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1: Biografia -->
+                    <a href="#biografia" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <img src="https://ichef.bbci.co.uk/images/ic/1024x576/p0b5m0n8.jpg" alt="[Imagem de livros antigos e uma pena]" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-moss-green group-hover:accent-color transition-colors">A Médica que Virou Educadora</h3>
+                            <p class="text-sm mt-2 text-gray-600">A jornada de uma pioneira.</p>
+                        </div>
+                    </a>
+                    <!-- Card 2: Método -->
+                    <a href="#metodo" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <img src="https://escolainfantilmontessori.com.br/wp-content/uploads/2021/08/materiais-sensoriais.jpg" alt="[Imagem de criança concentrada em uma atividade manual]" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-moss-green group-hover:accent-color transition-colors">A Criança no Centro</h3>
+                            <p class="text-sm mt-2 text-gray-600">Os pilares do método.</p>
+                        </div>
+                    </a>
+                    <!-- Card 3: Obras -->
+                    <a href="#obras" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <img src="https://d2769xx0p2uxse.cloudfront.net/Custom/Content/Products/91/44/91443_combo-maria-montessori-10-livros_l2_638608757479468005.webp" alt="[Imagem de pilha de livros clássicos]" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-moss-green group-hover:accent-color transition-colors">Palavras que Transformam</h3>
+                            <p class="text-sm mt-2 text-gray-600">Suas obras principais.</p>
+                        </div>
+                    </a>
+                    <!-- Card 4: Legado -->
+                    <a href="#legado" class="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <img src="https://media.istockphoto.com/id/690416076/pt/foto/asian-little-girl-and-parent-planting-young-tree-on-black-soil-together.jpg?s=612x612&w=0&k=20&c=lqTqL7x2D6pbXLNwIyg1Y1lc6L9JK47nYLrMCXiwWw0=" alt="[Imagem de mãos segurando um broto de planta]" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-moss-green group-hover:accent-color transition-colors">Um Legado para o Futuro</h3>
+                            <p class="text-sm mt-2 text-gray-600">O impacto na educação.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biografia Section (Updated) -->
+        <section id="biografia" class="section-padding">
+            <div class="container mx-auto">
+                <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">Quem Foi Maria Montessori?</h1>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-4">
+                        <img src="https://algosobre.com.br/images/stories/assuntos/biografias/Maria%20Montessori.jpg" alt="[Imagem de retrato de Maria Montessori jovem]" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:col-span-8 space-y-6">
+                        <div>
+                            <h2 class="text-2xl font-semibold text-moss-green mb-2">Uma Pioneira Contra a Corrente</h2>
+                            <p>Nascida em Chiaravalle, Itália, em 1870, Maria Montessori foi uma feminista e visionária. Em uma época em que as mulheres eram destinadas ao lar, ela, com o apoio de sua mãe, contrariou a vontade de seu pai e buscou a educação superior. Inicialmente interessada em engenharia, acabou por escolher a medicina, enfrentando um ambiente universitário hostil para se tornar uma das primeiras médicas da Itália.</p>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-semibold text-moss-green mb-2">O Despertar para a Pedagogia</h2>
+                            <p>Trabalhando na Clínica Psiquiátrica da Universidade de Roma, Montessori observou crianças diagnosticadas com transtornos mentais e percebeu que sua condição era agravada pela falta de estímulos. Foi nesse período que ela se envolveu com o médico Giuseppe Montesano, com quem teve um filho, Mario. Devido às convenções sociais, ela foi forçada a entregar seu filho para ser criado por outra família, um fato que marcou sua vida profundamente. Essa experiência dolorosa, somada ao seu trabalho clínico, a convenceu de que as crianças precisavam de uma abordagem pedagógica, e não apenas médica.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center mt-12">
+                     <div class="md:col-span-8 space-y-6 md:order-1 order-2">
+                        <div>
+                            <h2 class="text-2xl font-semibold text-moss-green mb-2">A "Casa dei Bambini" e a Pedagogia Científica</h2>
+                            <p>Em 1907, no bairro operário de San Lorenzo, Montessori fundou a "Casa dei Bambini". Ali, ela pôde aplicar sua "pedagogia científica", baseada na observação atenta e na criação de um ambiente preparado que permitia às crianças se desenvolverem com autonomia. Foi o laboratório onde nasceu o método que revolucionaria a educação.</p>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-semibold text-moss-green mb-2">Educação para a Paz e Oposição ao Fascismo</h2>
+                            <p>O sucesso de seu método a tornou uma figura global. No entanto, sua visão de uma educação que formava cidadãos livres e pensantes entrou em conflito direto com o regime fascista de Benito Mussolini. Montessori defendia um "novo homem", educado para a paz, enquanto o fascismo queria doutrinar crianças para a guerra. Sua recusa em cooperar resultou no fechamento de suas escolas na Itália e em seu exílio. Ela viajou o mundo, incluindo um longo período na Índia, disseminando sua filosofia e sendo indicada três vezes ao Prêmio Nobel da Paz.</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-4 md:order-2 order-1">
+                        <img src="https://i0.wp.com/larmontessori.com/wp-content/uploads/2021/06/ti1-Casa-dei-Bambini-edited.jpg?ssl=1" alt="[Imagem histórica da Casa dei Bambini]" class="rounded-lg shadow-lg w-full">
+                        <img src="https://ensina.rtp.pt/site-uploads/2019/11/Mussolini-c%C3%B3pia-854x480.jpg" alt="[Imagem de Maria Montessori durante seu exílio na Índia, um símbolo de sua resistência ao fascismo]" class="rounded-lg shadow-lg w-full mt-6">
+                        <p class="text-xs text-center text-gray-600 mt-2">No exílio, Montessori continuou a promover a educação para a paz, em oposição direta à ideologia fascista.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metodologia Section -->
+        <section id="metodo" class="bg-beige section-padding">
+            <div class="container mx-auto">
+                <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">O Método Montessori: Liberdade, Ambiente e Autonomia</h1>
+                
+                <!-- 4 Pilares (Updated Section) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://montessorinet.com.br/wp-content/uploads/2024/06/entendendo-a-autoeducacao-na-filosofia-montessori.jpg" alt="[Imagem de uma criança concentrada em um quebra-cabeça montessori]" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-moss-green mb-2">Autoeducação</h3>
+                            <p class="text-gray-700">A criança é a protagonista do seu próprio aprendizado. Montessori acreditava que existe um impulso interior que guia a criança a buscar o conhecimento. O papel do adulto é confiar nesse potencial e oferecer os meios para que ela possa explorar e aprender em seu próprio ritmo.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://escolainfantilmontessori.com.br/blog/wp-content/uploads/2018/01/10427276_699463486767638_3708577403065505234_n.jpg" alt="[Imagem de prateleiras baixas e organizadas com materiais montessori]" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-moss-green mb-2">Ambiente Preparado</h3>
+                            <p class="text-gray-700">O espaço educa. O ambiente deve ser cuidadosamente organizado, limpo, belo e funcional, com móveis de tamanho infantil e materiais dispostos em prateleiras baixas. Essa organização externa ajuda a criança a construir sua ordem mental interna e promove a independência.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://www.avivaescolainfantil.com.br/wp-content/uploads/2023/12/aluna-e-professora-do-metodo-montessori.jpg" alt="[Imagem de uma professora observando com carinho uma criança trabalhando]" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-moss-green mb-2">Adulto Preparado</h3>
+                            <p class="text-gray-700">O professor atua como um "guia", não como um transmissor de informações. Sua principal função é preparar o ambiente, observar a criança para entender suas necessidades e conectá-la às atividades, intervindo o mínimo possível. Ele é o guardião do ambiente e do processo.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="https://colegiomontesinai.com.br/wp-content/uploads/2023/10/rotina-para-criancas.jpg" alt="[Imagem de uma criança sorrindo enquanto cuida de uma planta]" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-moss-green mb-2">Criança Equilibrada</h3>
+                            <p class="text-gray-700">O objetivo final do método é ajudar a criança a atingir seu potencial máximo, resultando em um ser humano equilibrado. Isso inclui não apenas o desenvolvimento intelectual, mas também a independência, a autodisciplina, a confiança, a empatia e a capacidade de colaborar socialmente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conceitos Fundamentais: Os 4 Planos do Desenvolvimento -->
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-4">Os Quatro Planos do Desenvolvimento</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Montessori observou que o desenvolvimento humano ocorre em ciclos de aproximadamente seis anos. Cada "plano" tem características e necessidades únicas, guiando a abordagem educacional.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold accent-color mb-3">Primeiro Plano (0-6 anos): A Mente Absorvente</h3>
+                        <p>Caracterizado pela "Mente Absorvente", onde a criança aprende sem esforço a partir do ambiente. É o período dos "Períodos Sensíveis" para linguagem, movimento e ordem, construindo as fundações da personalidade.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                         <h3 class="text-xl font-semibold accent-color mb-3">Segundo Plano (6-12 anos): A Mente Raciocinante</h3>
+                        <p>A criança desenvolve a capacidade de raciocínio e imaginação. Surge um forte senso de moralidade e justiça. O interesse se expande do "o quê" para o "porquê", explorando o universo através da "Educação Cósmica".</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold accent-color mb-3">Terceiro Plano (12-18 anos): O Nascimento Social</h3>
+                        <p>Marcado por intensas transformações. O adolescente busca independência e um lugar na sociedade. Montessori propôs o "Erdkinder", uma comunidade onde os jovens trabalham e vivem juntos, conectando o estudo à vida real.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold accent-color mb-3">Quarto Plano (18-24 anos): A Mente Especialista</h3>
+                        <p>O jovem adulto busca sua contribuição para o mundo e a independência econômica. É um período de especialização profissional e de consolidação da maturidade emocional e espiritual para encontrar seu papel na humanidade.</p>
+                    </div>
+                </div>
+
+                <!-- Materiais de Desenvolvimento -->
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Materiais de Desenvolvimento</h2>
+                    <div id="gallery" class="bg-white p-4 md:p-8 rounded-lg shadow-xl">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="md:col-span-2">
+                                <img id="main-image" src="https://montessori-market.com/wp-content/uploads/2016/09/quality_premium_torre_rosa_1-mmm059.jpg" alt="[Material Montessori em destaque]" class="w-full h-auto object-cover rounded-lg transition-opacity duration-500 aspect-[4/3]">
+                            </div>
+                            <div class="md:col-span-1">
+                                <h3 id="material-title" class="text-2xl font-semibold text-moss-green mb-2">Torre Rosa</h3>
+                                <p id="material-description" class="text-gray-700 mb-4">
+                                    Composta por dez cubos de madeira rosa, a Torre Rosa ajuda a criança a desenvolver a discriminação visual de dimensão. O "controle do erro" é visual: se a torre não for montada corretamente, ela ficará torta ou cairá.
+                                </p>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <img src="https://montessori-market.com/wp-content/uploads/2016/09/quality_premium_torre_rosa_1-mmm059.jpg" alt="[Imagem da Torre Rosa]" class="gallery-thumb cursor-pointer rounded-md border-2 border-moss-green" data-title="Torre Rosa" data-description="Composta por dez cubos de madeira rosa, a Torre Rosa ajuda a criança a desenvolver a discriminação visual de dimensão. O 'controle do erro' é visual: se a torre não for montada corretamente, ela ficará torta ou cairá." data-img="https://montessori-market.com/wp-content/uploads/2016/09/quality_premium_torre_rosa_1-mmm059.jpg">
+                                    <img src="https://images.tcdn.com.br/img/img_prod/628051/escada_marrom_montessori_112_1_20200327093452.jpg" alt="[Imagem da Escada Marrom]" class="gallery-thumb cursor-pointer rounded-md border-2 border-transparent hover:border-moss-green" data-title="Escada Marrom" data-description="A Escada Marrom consiste em dez prismas que variam em altura e largura. Ela refina a percepção visual de dimensão e prepara a criança para conceitos matemáticos como geometria e o sistema decimal." data-img="https://images.tcdn.com.br/img/img_prod/628051/escada_marrom_montessori_112_1_20200327093452.jpg">
+                                    <img src="https://cdn.awsli.com.br/600x700/1654/1654534/produto/95208552/4-sf5g8jlomd.png" alt="[Imagem das Letras de Lixa]" class="gallery-thumb cursor-pointer rounded-md border-2 border-transparent hover:border-moss-green" data-title="Letras de Lixa" data-description="As Letras de Lixa são cartões com letras cursivas em lixa. A criança traça a letra com os dedos, associando o som (fonema) ao símbolo (grafema) através do tato, visão e audição, preparando-a para a escrita e leitura." data-img="https://cdn.awsli.com.br/600x700/1654/1654534/produto/95208552/4-sf5g8jlomd.png">
+                                    <img src="https://tistu.com.br/storage/posts/img-20230627-wa0010-1220526777.webp" alt="[Imagem de material de Vida Prática]" class="gallery-thumb cursor-pointer rounded-md border-2 border-transparent hover:border-moss-green" data-title="Vida Prática" data-description="Atividades como transferir grãos, lavar louça ou abotoar preparam a criança para a vida real. Elas desenvolvem a coordenação motora, a concentração, a independência e o senso de ordem." data-img="https://tistu.com.br/storage/posts/img-20230627-wa0010-1220526777.webp">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Obras Section -->
+        <section id="obras" class="section-padding">
+            <div class="container mx-auto">
+                <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">A Biblioteca de Montessori: Livros que Fundamentaram o Método</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Livro 1 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                        <img src="https://m.media-amazon.com/images/I/91Ig98YrwlL.jpg" alt="[Imagem da capa do livro Pedagogia Científica]" class="w-40 h-60 object-cover rounded-md shadow-md mb-4">
+                        <h3 class="font-semibold text-lg text-moss-green">Pedagogia Científica</h3>
+                        <p class="text-sm text-gray-600 mt-2">A obra fundadora, onde Montessori apresenta as bases científicas de seu método, nascidas da observação do comportamento infantil.</p>
+                    </div>
+                    <!-- Livro 2 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI98VGnscMGOBJJK1Hidi_wMPD3mDMhX6jxQ&s" alt="[Imagem da capa do livro A Mente Absorvente]" class="w-40 h-60 object-cover rounded-md shadow-md mb-4">
+                        <h3 class="font-semibold text-lg text-moss-green">A Mente Absorvente</h3>
+                        <p class="text-sm text-gray-600 mt-2">Um mergulho profundo nos primeiros anos de vida, explicando os incríveis poderes da mente infantil e sua capacidade de aprendizado.</p>
+                    </div>
+                    <!-- Livro 3 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                        <img src="https://m.media-amazon.com/images/I/71Hyb8jvAfL._UF1000,1000_QL80_.jpg" alt="[Imagem da capa do livro O Segredo da Infância]" class="w-40 h-60 object-cover rounded-md shadow-md mb-4">
+                        <h3 class="font-semibold text-lg text-moss-green">O Segredo da Infância</h3>
+                        <p class="text-sm text-gray-600 mt-2">(Título anterior: A Criança) Um apelo aos adultos para que compreendam e respeitem a natureza e as necessidades da criança, revelando o 'segredo' para um desenvolvimento saudável.</p>
+                    </div>
+                    <!-- Livro 4 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+                        <img src="https://m.media-amazon.com/images/I/81IW0T4IEKL._UF894,1000_QL80_.jpg" alt="[Imagem da capa do livro Educação para um Novo Mundo]" class="w-40 h-60 object-cover rounded-md shadow-md mb-4">
+                        <h3 class="font-semibold text-lg text-moss-green">Educação para um Novo Mundo</h3>
+                        <p class="text-sm text-gray-600 mt-2">Neste livro, Montessori delineia sua visão de como a educação pode ser a chave para a reconstrução da sociedade e a conquista da paz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legado Section -->
+        <section id="legado" class="bg-beige section-padding">
+            <div class="container mx-auto">
+                <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">O Legado de Montessori: Uma Educação para a Vida e para a Paz</h1>
+                <div class="max-w-4xl mx-auto space-y-10">
+                    <div>
+                        <h2 class="text-2xl font-semibold accent-color mb-3">Influência na Educação Contemporânea</h2>
+                        <p>Muitos conceitos que hoje consideramos modernos na educação, como a "aprendizagem centrada no aluno", "salas de aula com múltiplas idades" e a "aprendizagem baseada em projetos", têm raízes profundas nas ideias montessorianas. Sua ênfase na autonomia e no respeito pelo ritmo individual de cada criança continua a inspirar educadores em todo o mundo.</p>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-semibold accent-color mb-3">Montessori no Século XXI</h2>
+                        <p>O método permanece incrivelmente relevante. Em um mundo que exige criatividade, resolução de problemas e colaboração, a abordagem Montessori cultiva exatamente essas "soft skills". Ao promover a independência e a autoconfiança, ela prepara as crianças não apenas para a escola, mas para os desafios da vida.</p>
+                    </div>
+                    
+                    <!-- Citações -->
+                    <div class="bg-moss-green text-white p-8 rounded-lg shadow-xl my-12">
+                        <h2 class="text-2xl font-semibold text-center mb-6">Palavras que Inspiram</h2>
+                        <div class="space-y-4">
+                            <blockquote class="text-center italic text-lg border-l-4 border-white/50 pl-4">
+                                "A tarefa do professor é preparar uma série de motivos de atividade cultural, espalhados num ambiente especialmente preparado, e depois abster-se de uma interferência intrusiva."
+                            </blockquote>
+                            <blockquote class="text-center italic text-lg border-l-4 border-white/50 pl-4">
+                                "A maior necessidade do nosso tempo é libertar o potencial humano para construir um mundo pacífico."
+                            </blockquote>
+                            <blockquote class="text-center italic text-lg border-l-4 border-white/50 pl-4">
+                                "A educação é a arma da paz."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center text-sm">
+            <p class="font-semibold">Projeto Acadêmico - Montessori na Disciplina de Didática</p>
+            <p class="mt-2">Desenvolvido por: Souza, D. P. e Lobo, D.</p>
+            <p>Data: Julho de 2025</p>
+            <p class="mt-4 text-xs text-gray-400">Fontes Principais: Lar Montessori e materiais de estudo.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Interactive Gallery
+        const mainImage = document.getElementById('main-image');
+        const materialTitle = document.getElementById('material-title');
+        const materialDescription = document.getElementById('material-description');
+        const galleryThumbs = document.querySelectorAll('.gallery-thumb');
+
+        galleryThumbs.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                // Update content
+                mainImage.style.opacity = 0;
+                setTimeout(() => {
+                    mainImage.src = this.dataset.img;
+                    materialTitle.textContent = this.dataset.title;
+                    materialDescription.textContent = this.dataset.description;
+                    mainImage.alt = `[${this.dataset.title}]`;
+                    mainImage.style.opacity = 1;
+                }, 300);
+
+                // Update active border
+                galleryThumbs.forEach(t => t.classList.remove('border-moss-green'));
+                this.classList.add('border-moss-green');
+            });
+        });
+    </script>
+
+</body>
+</html>
